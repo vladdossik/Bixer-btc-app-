@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view" >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_mixer"
+            android:icon="@drawable/ic_action_mixer"
+            android:title="Mixer"
+            android:textColor="#CCCCCC"/>
+        <item
+            android:id="@+id/nav_analytics"
+android:icon="@drawable/ic_action_analytics"
+            android:title="Analytics"
+            android:textColor="#CCCCCC"
+           />
+        <item
+            android:id="@+id/nav_analytic"
+            android:icon="@drawable/ic_action_analytics"
+            android:title="Statistics"
+            android:textColor="#CCCCCC"
+            />
+        <item
+            android:id="@+id/nav_news"
+android:icon="@drawable/ic_action_news"
+            android:title="News"
+            android:textColor="#CCCCCC"/>
+        <item
+            android:id="@+id/nav_about"
+android:icon="@drawable/ic_action_about"
+            android:title="About"
+            android:textColor="#CCCCCC"/>
+            <item
+                android:id="@+id/nav_share"
+              android:icon="@drawable/ic_action_share"
+                android:title="Share"
+                android:textColor="#CCCCCC"/>
+            <item
+                android:id="@+id/nav_help"
+          android:icon="@drawable/ic_action_help"
+                android:title="Help"
+                android:textColor="#CCCCCC"/>
+    </group>
+
+</menu>

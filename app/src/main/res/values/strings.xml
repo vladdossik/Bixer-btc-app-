@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Bixer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Bixer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Mixer">Mixer</string>
+    <string name="Analysis">Analysis</string>
+    <string name="News">News</string>
+    <string name="Us">Us</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_text">
+        The mixing fee is randomized between 0.5%-1%.
+You can specify  1 adress.
+You can mix from 0.05(multiplied by the number of output adresses you specify) btc to 4 btc.\n
+You have 24 hours to send in my payment.
+If you choose "fast" then within about an hour. If you choose "slow" then within about 4 hours. If you specify more than one output address,your payment will be sent to you in separate transactions for each output address,
+        with additional delays between each payment.\n
+   </string>
+    <string name="about_us">
+       We are amateurs programmers from Moscow. We started programming for fun back in 2012, and it became our primary hobby throughout our adolescence.\n Then, in 2014, we entered Lyceum of Information\n Technologies #1533 based in Moscow, where we chose programming as profile subject.\n
+We use this app to present our work and share everything we learn.\n Our goal is to collect everything we consider useful within one place.\n We also want to help people become interested in blockchain.\n
+We strongly believe in revolution in modern life, which made people able to be really free, with using blockchain as the main techonology for decentralising.\n A lot of lectures are being organized in the city you and we live in.\n So, we do our best to encourage people to pay more attention to blockchain.\nMain crew: Nikita Matsnew and Vlad Sedov. Support team: Matvey Kottsov and Ekaterina Sapunova.
+   </string>
+    <string name="about_analytics">
+        Analytic part contains graphs of bitcoin addresses and block explorer.\n Bitcoin graphs will show you information about chosen wallets in simple and understandable way, and explorer shows you full information about hash, address, block or transaction.
+    </string>
+    <string name="about_news">
+    Our app allows you to receive news and up-to-date information about what is happening in the world of innovation and blockchain, mostly, there will be news about the bitcoin network.
+</string>
+    <string name="about_wallet">
+        Where do you want yor bitcoins send?\n Fill bitcoin adress.
+    </string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="no_stories">No stories found. Try again later.</string>
+    <string name="converter_page">ConVerter</string>
+
+    <string name="action_goto_conversion">Conversion</string>
+
+    <string name="action_delete_item">Delete</string>
+
+    <string name="shared_crypto_pref">CRYPTOCOMPARE</string>
+
+    <string name="double_card_alert">Card already exits!</string>
+
+    <string name="empty_view">No items, add \'+\' to get started...</string>
+
+    <string-array name="currency_list">
+        <item>NGN, ₦</item>
+        <item>USD, US$</item>
+        <item>EUR, €</item>
+        <item>JPY, ¥</item>
+        <item>AUD, A$</item>
+        <item>BRL, R$</item>
+        <item>CAD, C$</item>
+        <item>CHF, SFr</item>
+        <item>GBP, £</item>
+        <item>IDR, Rp</item>
+        <item>INR, ₹</item>
+        <item>KES, Ksh</item>
+        <item>KRW, ₩</item>
+        <item>CNY, Y</item>
+        <item>PLN, zł</item>
+        <item>RUB, ₽</item>
+        <item>THB, ฿</item>
+        <item>TRY, ₺</item>
+        <item>TZS, Tsh</item>
+        <item>UAH, ₴</item>
+    </string-array>
+</resources>

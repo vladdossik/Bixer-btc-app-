@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#25252f</color>
+    <color name="colorPrimaryDark">#25252F</color>
+    <color name="colorAccent">#00FFFF</color>
+    <color name="tvBackground">#808080</color>
+    <color name="formenu">#CCCCCC</color>
+    <color name="colorPrimary1">#E0FFFF</color>
+    <color name="colorPrimaryDark1">#B0C4DE</color>
+    <color name="colorAccent1">#191970</color>
+</resources>
