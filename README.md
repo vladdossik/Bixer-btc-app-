@@ -1,7 +1,7 @@
 # Bixer-btc-app-
 my first android app.
 
-The application was made as a project in the lyceum where have I studied. It includes a bitcoin mixer, analytics, news, brief information about the listed and about the developer. For convenience, the share function is implemented. You can also contact the developer from the application using the help function.
+The application was made as a project in the lyceum where I have  studied. It includes a bitcoin mixer, analytics, news, brief information about the listed and about the developer. For convenience, the share function is implemented. You can also contact the developer from the application using the help function.
 
 Main page.
 
