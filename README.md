@@ -1,10 +1,10 @@
 # Bixer-btc-app-
 my first android app. 
-You can download this application by clicking on the link:https://play.google.com/store/apps/details?id=biz.bixer.bixer
+You can download this application by clicking on the link: https://play.google.com/store/apps/details?id=biz.bixer.bixer
 
 The application was made as a project in the lyceum where I have  studied. It includes a bitcoin mixer, analytics, news, brief information about the listed and about the developer. For convenience, the share function is implemented. You can also contact the developer from the application using the help function.
 
-Main page.
+Main page. Here I added a webview, for the fastest access to one of the news sources: https://cointelegraph.com/.
 
 ![photo_2019-07-02_22-03-04 (2)](https://user-images.githubusercontent.com/45006912/60539535-9b7c4f00-9d15-11e9-8c63-534215e0293a.jpg)
 
