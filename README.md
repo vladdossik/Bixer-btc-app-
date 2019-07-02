@@ -8,7 +8,7 @@ Main page. Here I added a webview, for the fastest access to one of the news sou
 
 ![photo_2019-07-02_22-03-04 (2)](https://user-images.githubusercontent.com/45006912/60539535-9b7c4f00-9d15-11e9-8c63-534215e0293a.jpg)
 
-Menu.From this page you can get to all the others.
+Menu. From this page you can get to all the others.
 
 ![photo_2019-07-02_22-02-58](https://user-images.githubusercontent.com/45006912/60539571-afc04c00-9d15-11e9-8953-057cec7785e7.jpg)
 
@@ -21,11 +21,11 @@ Analytics and statistics pages.Here you can find the price of bitcoin, informati
 ![photo_2019-07-02_22-03-03](https://user-images.githubusercontent.com/45006912/60539686-f9a93200-9d15-11e9-9aa3-7d941eb51da9.jpg)
 ![photo_2019-07-02_22-03-02 (2)](https://user-images.githubusercontent.com/45006912/60539692-fca42280-9d15-11e9-8220-32a99096a222.jpg)
 
-News page. At this stage, I realized that all applications related to news about cryptocurrency use only 1 news resource. So, I decided to use a little more .... 9). This is done so that everyone has a choice.
+News page. At this stage, I realized that all applications related to news about cryptocurrency use only 1 news resource. So, I decided to use a little more .... 9). This is done so that everyone has a choice. I used webview to display news resources. This part needs some work. Since it was necessary to write the application in the shortest lines, frequent repetition of the code was used.
 
 ![photo_2019-07-02_22-03-02](https://user-images.githubusercontent.com/45006912/60539696-0168d680-9d16-11e9-904e-49297f48d344.jpg)
 
-About page. Here I added information about Bitcoin mixer, analytics, news and about us.
+About page. Here I added information about Bitcoin mixer, analytics, news and about us.Here I used RecyclerView. For me it was a bit difficult, because I could not set up the correct work for a long time.
 
 ![photo_2019-07-02_22-03-01](https://user-images.githubusercontent.com/45006912/60539701-0594f400-9d16-11e9-9064-ba1496897a78.jpg)
 
@@ -33,6 +33,6 @@ Share page. Here I added small pictures, clicking on which will help you find us
 
 ![photo_2019-07-02_22-03-00](https://user-images.githubusercontent.com/45006912/60539708-07f74e00-9d16-11e9-9aa6-bb8479b52dc9.jpg)
 
-Help page.This page is used to contact the developer. It is necessary to fill in the fields and clicking the Send button gives the client the choice of which email-client to use.
+Help page.This page is used to contact the developer. It is necessary to fill in the fields and clicking the Send button gives the client the choice of which email-client to use. It was too easy, since I used Youtube when implementing this part of the project.
 
 ![photo_2019-07-02_22-02-59](https://user-images.githubusercontent.com/45006912/60539709-09287b00-9d16-11e9-829f-bca7ed451531.jpg)
