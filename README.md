@@ -1,5 +1,6 @@
 # Bixer-btc-app-
-my first android app.
+my first android app. 
+You can download this application by clicking on the link:https://play.google.com/store/apps/details?id=biz.bixer.bixer
 
 The application was made as a project in the lyceum where I have  studied. It includes a bitcoin mixer, analytics, news, brief information about the listed and about the developer. For convenience, the share function is implemented. You can also contact the developer from the application using the help function.
 
