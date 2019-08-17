@@ -1,4 +1,4 @@
-# Bixer-btc-app
+# Bixer-btc app
 My first android app. 
 You can download this application by clicking on the link: https://play.google.com/store/apps/details?id=biz.bixer.bixer
 
