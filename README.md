@@ -5,9 +5,12 @@ You can download this application by clicking on the link: https://play.google.c
 The application was made as a project in the lyceum where I have  studied. It includes a bitcoin mixer, analytics, news, brief information about the listed and about the developer. For convenience, the share function is implemented. You can also contact the developer from the application using the help function.
 ## Update.
 In version 1.1 I added Splash Screen and Bitcoin-checker.
+To add the CORRECT splash screen I used https://habr.com/ru/post/312516/. It should be until the application loads. No delays added.
+Bitcoin-checker looks like a bitcoin calculator. You need to enter the number of bitcoins and the application will show their price in dollars.
 
 ![photo_2019-08-17_03-18-59](https://user-images.githubusercontent.com/45006912/63211905-62057480-c106-11e9-9f58-1e8cd6f2aa5f.jpg)
 ![photo_2019-08-17_15-50-25](https://user-images.githubusercontent.com/45006912/63211937-c9bbbf80-c106-11e9-96a4-5954f84640b6.jpg)
+
 ## Main page.
 Here I added a webview for the fastest access to one of the news sources: https://cointelegraph.com/. I found it as simple as possible.
 
