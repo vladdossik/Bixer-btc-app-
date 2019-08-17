@@ -23,7 +23,6 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="115" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -34,7 +33,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="C:\Dev-Cpp\photo_2018-09-19_22-49-57.jpg" />
+                                      <entry key="backgroundLayerName" value="ic_launcher_hands" />
+                                      <entry key="foregroundImage" value="C:\cnight\BIXER2\im-16358.jpg" />
+                                      <entry key="foregroundLayerName" value="hand" />
+                                      <entry key="outputName" value="hands" />
                                     </map>
                                   </option>
                                 </PersistentState>

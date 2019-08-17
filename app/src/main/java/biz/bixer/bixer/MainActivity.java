@@ -19,25 +19,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.content.ContextCompat;
-import android.widget.CompoundButton;
-import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
-
-super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer,toolbar,R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         drawer.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.tvBackground));
@@ -45,39 +38,36 @@ super.onCreate(savedInstanceState);
         navigationView.setNavigationItemSelectedListener(this);
         Fragment fragment = null;
         Class fragmentClass = null;
-       // fragmentClass=MainActivity.class;
-    //   try {
-     //   fragment = (Fragment) fragmentClass.newInstance();
-     //   } catch (Exception e) {
-      //      e.printStackTrace();
-      //  }
-     //   FragmentManager fragmentManager = getSupportFragmentManager();
-     //   fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-      //  // Выделяем выбранный пункт меню в шторке
-
+        fragmentClass=FifthFragment.class;
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+        // Выделяем выбранный пункт меню в шторке
     }
     private static long back_pressed;
     @Override
     public void onBackPressed() {
         Fragment fragment = null;
         Class fragmentClass = null;
-        fragmentClass=ThirdFragment.class;
-
+        fragmentClass=FifthFragment.class;
         if (back_pressed + 500 > System.currentTimeMillis()) {
             new AlertDialog.Builder(this)
-                   .setTitle("Really exit?")
-                   .setMessage("Are you sure you want to exit?")
-                   .setNegativeButton(android.R.string.no,null)
-                   .setPositiveButton(android.R.string.yes,new DialogInterface.OnClickListener(){
-                public void onClick(DialogInterface arg0,int arg1)
-              {
-            MainActivity.super.onBackPressed();
+                    .setTitle("Really exit?")
+                    .setMessage("Are you sure you want to exit?")
+                    .setNegativeButton(android.R.string.no,null)
+                    .setPositiveButton(android.R.string.yes,new DialogInterface.OnClickListener(){
+                        public void onClick(DialogInterface arg0,int arg1)
+                        {
+                            MainActivity.super.onBackPressed();
+                        }
+                    }).create().show();
         }
-          }).create().show();
-        }
-
         else {
-            fragmentClass=ThirdFragment.class;
+            fragmentClass=FifthFragment.class;
         }
         back_pressed = System.currentTimeMillis();
         try {
@@ -93,7 +83,6 @@ super.onCreate(savedInstanceState);
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-
         return true;
     }
     @Override
@@ -106,11 +95,11 @@ super.onCreate(savedInstanceState);
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_home) {
-            fragmentClass=ThirdFragment.class;
+            fragmentClass=FifthFragment.class;
         }
         if(id==R.id.action_website)
         {
-fragmentClass=website.class;
+            fragmentClass=website.class;
         }
         try {
             fragment = (Fragment) fragmentClass.newInstance();
@@ -128,8 +117,7 @@ fragmentClass=website.class;
         // Создадим новый фрагмент
         Fragment fragment = null;
         Class fragmentClass = null;
-
-    //fragmentClass=ThirdFragment.class;
+        //fragmentClass=ThirdFragment.class;
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         if (id == R.id.nav_mixer) {
@@ -137,7 +125,11 @@ fragmentClass=website.class;
             fragmentClass = FirstFragment.class;
         } else if (id == R.id.nav_analytics) {
             fragmentClass = SecondFragment.class;
-        } else if (id == R.id.nav_news) {
+        }
+        else if(id == R.id.nav_checker) {
+            fragmentClass=Bitcoin_checker.class;
+        }
+        else if (id == R.id.nav_news) {
             fragmentClass=ThirdFragment.class;
         } else if (id == R.id.nav_about) {
             fragmentClass=FourthFragment.class;
@@ -146,7 +138,7 @@ fragmentClass=website.class;
         } else if (id == R.id.nav_help) {
             fragmentClass=SixthFragment.class;
         }
-        else if(id==R.id.nav_analytic)
+                else if(id==R.id.nav_analytic)
         {
             fragmentClass=StatisticsFragment.class;
         }
@@ -155,21 +147,15 @@ fragmentClass=website.class;
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         // Вставляем фрагмент, заменяя текущий фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
         // Выделяем выбранный пункт меню в шторке
         item.setChecked(true);
+        // Выводим выбранный пункт в заголовке
+        // setTitle(item.getTitle());
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-
-    }
-    public void restartApp()
-    {
-        Intent i=new Intent(getApplicationContext(),MainActivity.class);
-        startActivity(i);
-        finish();
     }
 }

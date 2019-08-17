@@ -76,14 +76,7 @@
         android:textColor="#CCCCCC"
         android:text="Here you can find the difficulty of the bitcoin network, the hashrate, the average block calculation time, the average block size, the average number of transactions per second and the network Commission analysis for the last 36 blocks." />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-190dp"
-        android:text="Dark  " />
+
 
 
 </RelativeLayout>

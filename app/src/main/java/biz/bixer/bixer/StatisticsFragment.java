@@ -339,7 +339,7 @@ return "difficulty of Bitcoin network: "+difficulty;
                 String medium=parentObject.getString("medium");
                 String low=parentObject.getString("low");
 
-                return "Commission: \n"+"high: "+high+" satoshi per byte"+"\n"+"medium: "+medium+"satoshi per byte"+"\n"+"low: "+low+"satoshi per byte";
+                return "Commission: \n"+"high: "+high+" satoshi per byte"+"\n"+"medium: "+medium+" satoshi per byte"+"\n"+"low: "+low+" satoshi per byte";
             } catch (
                     MalformedURLException e)
 

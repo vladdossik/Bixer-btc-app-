@@ -3,23 +3,14 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary1</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark1</item>
-        <item name="colorAccent">@color/colorAccent1</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowAnimationStyle">@style/windowEnterTransition</item>
 
     </style>
-<style name="darktheme" parent="Theme.AppCompat.Light">
-    <item name="colorPrimary">@color/colorPrimary</item>
-    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-    <item name="colorAccent">@color/colorAccent</item>
-    <item name="android:windowAnimationStyle">@style/windowEnterTransition</item>
-</style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
-
     </style>
     <style name="StoryLayout">
         <item name="android:layout_height">106dp</item>
@@ -33,4 +24,12 @@
     <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
     <item name="android:windowExitAnimation">@android:anim/fade_out</item>
 </style>
+        <!-- Base application theme. -->
+        <style name="ApTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+        </style>
+
+        <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+            <item name="android:windowBackground">@drawable/splash_screen</item>
+        </style>
 </resources>

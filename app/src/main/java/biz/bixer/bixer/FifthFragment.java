@@ -47,7 +47,7 @@ public class FifthFragment extends Fragment {
         { @Override
             public void onClick(View v)
             {
-                Uri address = Uri.parse("http://t.me/progerss");
+                Uri address = Uri.parse("http://t.me/Vladdosiik");
                 Intent openlinkIntent = new Intent(Intent.ACTION_VIEW, address);
                 startActivity(openlinkIntent);
             }
@@ -56,7 +56,7 @@ public class FifthFragment extends Fragment {
         { @Override
         public void onClick(View v)
         {
-            Uri address = Uri.parse("https://www.instagram.com/bixer.biz/");
+            Uri address = Uri.parse("https://www.instagram.com/vladdosiik/");
             Intent openlinkIntent = new Intent(Intent.ACTION_VIEW, address);
             startActivity(openlinkIntent);
         }
@@ -74,7 +74,7 @@ public class FifthFragment extends Fragment {
         { @Override
         public void onClick(View v)
         {
-            Uri address = Uri.parse("http://bixer.biz/");
+            Uri address = Uri.parse("http://vladdosiik.ru/");
             Intent openlinkIntent = new Intent(Intent.ACTION_VIEW, address);
             startActivity(openlinkIntent);
         }
@@ -83,7 +83,7 @@ public class FifthFragment extends Fragment {
         { @Override
         public void onClick(View v)
         {
-            Uri address = Uri.parse("https://github.com/Bixer-mixer/bixer");
+            Uri address = Uri.parse("https://github.com/Bixxxer");
             Intent openlinkIntent = new Intent(Intent.ACTION_VIEW, address);
             startActivity(openlinkIntent);
         }
@@ -92,7 +92,7 @@ public class FifthFragment extends Fragment {
         { @Override
         public void onClick(View v)
         {
-            Uri address = Uri.parse("https://www.facebook.com/bixer.biz");
+            Uri address = Uri.parse("https://www.facebook.com/vladdosiik");
             Intent openlinkIntent = new Intent(Intent.ACTION_VIEW, address);
             startActivity(openlinkIntent);
         }

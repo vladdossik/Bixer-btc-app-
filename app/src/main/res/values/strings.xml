@@ -8,7 +8,7 @@
     <string name="Mixer">Mixer</string>
     <string name="Analysis">Analysis</string>
     <string name="News">News</string>
-    <string name="Us">Us</string>
+    <string name="I">I</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="about_text">
         The mixing fee is randomized between 0.5%-1%.
@@ -19,15 +19,15 @@ If you choose "fast" then within about an hour. If you choose "slow" then within
         with additional delays between each payment.\n
    </string>
     <string name="about_us">
-       We are amateurs programmers from Moscow. We started programming for fun back in 2012, and it became our primary hobby throughout our adolescence.\n Then, in 2014, we entered Lyceum of Information\n Technologies #1533 based in Moscow, where we chose programming as profile subject.\n
-We use this app to present our work and share everything we learn.\n Our goal is to collect everything we consider useful within one place.\n We also want to help people become interested in blockchain.\n
-We strongly believe in revolution in modern life, which made people able to be really free, with using blockchain as the main techonology for decentralising.\n A lot of lectures are being organized in the city you and we live in.\n So, we do our best to encourage people to pay more attention to blockchain.\nMain crew: Nikita Matsnew and Vlad Sedov. Support team: Matvey Kottsov and Ekaterina Sapunova.
+       I am amateur programmer from Moscow. I started programming for fun back in 2012, and it became my primary hobby throughout our adolescence.\n Then, in 2014, I entered Lyceum of Information\n Technologies #1533 based in Moscow, where I chose programming as profile subject.\n
+I use this app to present our work and share everything we learn.\n My goal is to collect everything I consider useful within one place.\n I also want to help people become interested in blockchain.\n
+I strongly believe in revolution in modern life, which made people able to be really free, with using blockchain as the main techonology for decentralising.\n A lot of lectures are being organized in the city you and I live in.\n So, I do my best to encourage people to pay more attention to blockchain.\n Vlad Sedov.
    </string>
     <string name="about_analytics">
         Analytic part contains graphs of bitcoin addresses and block explorer.\n Bitcoin graphs will show you information about chosen wallets in simple and understandable way, and explorer shows you full information about hash, address, block or transaction.
     </string>
     <string name="about_news">
-    Our app allows you to receive news and up-to-date information about what is happening in the world of innovation and blockchain, mostly, there will be news about the bitcoin network.
+    My app allows you to receive news and up-to-date information about what is happening in the world of innovation and blockchain, mostly, there will be news about the bitcoin network.
 </string>
     <string name="about_wallet">
         Where do you want yor bitcoins send?\n Fill bitcoin adress.

@@ -98,7 +98,7 @@ public class FourthFragment extends Fragment {
                 case 2:
                     return "news";
                     case 3:
-                        return"us";
+                        return"I";
             default:
                 return null;
         }
