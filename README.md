@@ -2,16 +2,16 @@
 My first android app. 
 You can download this application by clicking on the link: https://play.google.com/store/apps/details?id=biz.bixer.bixer
 
-![photo_2019-08-17_03-18-59](https://user-images.githubusercontent.com/45006912/63211905-62057480-c106-11e9-9f58-1e8cd6f2aa5f.jpg)
-![photo_2019-08-17_15-50-25](https://user-images.githubusercontent.com/45006912/63211937-c9bbbf80-c106-11e9-96a4-5954f84640b6.jpg)
-![photo_2019-08-17_15-52-07](https://user-images.githubusercontent.com/45006912/63211957-08ea1080-c107-11e9-8cb8-9756f43e2fa9.jpg)
-![photo_2019-08-17_03-18-59 (2)](https://user-images.githubusercontent.com/45006912/63211985-5e262200-c107-11e9-9070-68d5e5586db6.jpg)
-![photo_2019-08-17_03-18-59 (3)](https://user-images.githubusercontent.com/45006912/63211971-2f0fb080-c107-11e9-80b0-ec3909efd16f.jpg)
-![photo_2019-08-17_03-18-59 (4)](https://user-images.githubusercontent.com/45006912/63211974-45b60780-c107-11e9-8789-543c852a0ae6.jpg)
-![photo_2019-08-17_03-18-59 (5)](https://user-images.githubusercontent.com/45006912/63211976-48186180-c107-11e9-81b3-16ff745657f9.jpg)
-![photo_2019-08-17_03-18-59 (7)](https://user-images.githubusercontent.com/45006912/63211991-739b4c00-c107-11e9-8846-67940422207b.jpg)
-![photo_2019-08-17_03-18-59 (6)](https://user-images.githubusercontent.com/45006912/63212006-962d6500-c107-11e9-90a2-2a37a7b8799e.jpg)
-![photo_2019-08-17_03-18-59 (8)](https://user-images.githubusercontent.com/45006912/63212007-988fbf00-c107-11e9-89c8-54aae17038c8.jpg)
+![photo_2019-08-17_03-18-59](https://user-images.githubusercontent.com/45006912/63211905-62057480-c106-11e9-9f58-1e8cd6f2aa5f.jpg)  
+![photo_2019-08-17_15-50-25](https://user-images.githubusercontent.com/45006912/63211937-c9bbbf80-c106-11e9-96a4-5954f84640b6.jpg)  
+![photo_2019-08-17_15-52-07](https://user-images.githubusercontent.com/45006912/63211957-08ea1080-c107-11e9-8cb8-9756f43e2fa9.jpg)  
+![photo_2019-08-17_03-18-59 (2)](https://user-images.githubusercontent.com/45006912/63211985-5e262200-c107-11e9-9070-68d5e5586db6.jpg)  
+![photo_2019-08-17_03-18-59 (3)](https://user-images.githubusercontent.com/45006912/63211971-2f0fb080-c107-11e9-80b0-ec3909efd16f.jpg)  
+![photo_2019-08-17_03-18-59 (4)](https://user-images.githubusercontent.com/45006912/63211974-45b60780-c107-11e9-8789-543c852a0ae6.jpg)  
+![photo_2019-08-17_03-18-59 (5)](https://user-images.githubusercontent.com/45006912/63211976-48186180-c107-11e9-81b3-16ff745657f9.jpg)  
+![photo_2019-08-17_03-18-59 (7)](https://user-images.githubusercontent.com/45006912/63211991-739b4c00-c107-11e9-8846-67940422207b.jpg)  
+![photo_2019-08-17_03-18-59 (6)](https://user-images.githubusercontent.com/45006912/63212006-962d6500-c107-11e9-90a2-2a37a7b8799e.jpg)  
+![photo_2019-08-17_03-18-59 (8)](https://user-images.githubusercontent.com/45006912/63212007-988fbf00-c107-11e9-89c8-54aae17038c8.jpg)  
 ![photo_2019-08-17_03-18-58](https://user-images.githubusercontent.com/45006912/63212008-9af21900-c107-11e9-949c-82bf5bcf95ed.jpg)
 
 The application was made as a project in the lyceum where I have  studied. It includes a bitcoin mixer, analytics, news, brief information about the listed and about the developer. For convenience, the share function is implemented. You can also contact the developer from the application using the help function.
@@ -34,4 +34,4 @@ Here I added information about Bitcoin mixer, analytics, news and about us.Here 
 ## Share page.
 Here I added small pictures, clicking on which will help you find us in a telegram, instagram, twitter, github, facebook. There is also a link to the site. By clicking on the share button you can share a link to the site using the functions of the smartphone. This page needs some work (many links have changed).
 ## Help page.
-This page is used to contact the developer. It is necessary to fill in the fields and clicking the Send button gives the client the choice of which email-client to use. It was too easy, since I used Youtube when implementing this part of the project.
+This page is used to contact the developer. It is necessary to fill in the fields and clicking the Send button gives the client the choice of which email-client to use. It was too easy, since I used Youtube when implementing this part of the project
