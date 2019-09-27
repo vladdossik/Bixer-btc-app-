@@ -35,3 +35,9 @@ Here I added information about Bitcoin mixer, analytics, news and about us.Here 
 Here I added small pictures, clicking on which will help you find us in a telegram, instagram, twitter, github, facebook. There is also a link to the site. By clicking on the share button you can share a link to the site using the functions of the smartphone. This page needs some work (many links have changed).
 ## Help page.
 This page is used to contact the developer. It is necessary to fill in the fields and clicking the Send button gives the client the choice of which email-client to use. It was too easy, since I used Youtube when implementing this part of the project
+## Permissions
+```
+android.permission.ACCESS_NETWORK_STATE
+android.permission.INTERNET
+```
+
