@@ -68,4 +68,7 @@ I strongly believe in revolution in modern life, which made people able to be re
         <item>TZS, Tsh</item>
         <item>UAH, ₴</item>
     </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
 </resources>
