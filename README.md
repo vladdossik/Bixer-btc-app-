@@ -36,3 +36,5 @@ Share page. Here I added small pictures, clicking on which will help you find us
 Help page.This page is used to contact the developer. It is necessary to fill in the fields and clicking the Send button gives the client the choice of which email-client to use. It was too easy, since I used Youtube when implementing this part of the project.
 
 ![photo_2019-07-02_22-02-59](https://user-images.githubusercontent.com/45006912/60615487-e52d6e00-9dd7-11e9-946a-2675c8f93812.jpg)
+
+ in version 2.0 I will add a function for changing theme color and and completely redo the output and reading of the news.
