@@ -2,21 +2,20 @@ package biz.bixer.bixer.Pages;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AlertDialog;
-import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.content.ContextCompat;
 
 import biz.bixer.bixer.R;
-import biz.bixer.bixer.news.add_news1;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         Fragment fragment = null;
         Class fragmentClass = null;
-        fragmentClass=add_news1.class;
+       fragmentClass=Bitcoin_checker.class;
         try {
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
@@ -79,15 +78,13 @@ public class MainActivity extends AppCompatActivity
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
@@ -104,7 +101,6 @@ public class MainActivity extends AppCompatActivity
         } catch (Exception e) {
             e.printStackTrace();
         }
-        // Вставляем фрагмент, заменяя текущий фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
         return super.onOptionsItemSelected(item);
@@ -125,7 +121,7 @@ public class MainActivity extends AppCompatActivity
             fragmentClass=Bitcoin_checker.class;
         }
         else if (id == R.id.nav_news) {
-            fragmentClass=ThirdFragment.class;
+            fragmentClass=news_page.class;
         } else if (id == R.id.nav_about) {
             fragmentClass=FourthFragment.class;
         } else if (id == R.id.nav_share) {
@@ -142,13 +138,10 @@ public class MainActivity extends AppCompatActivity
         } catch (Exception e) {
             e.printStackTrace();
         }
-        // Вставляем фрагмент, заменяя текущий фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-        // Выделяем выбранный пункт меню в шторке
+
         item.setChecked(true);
-        // Выводим выбранный пункт в заголовке
-        // setTitle(item.getTitle());
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

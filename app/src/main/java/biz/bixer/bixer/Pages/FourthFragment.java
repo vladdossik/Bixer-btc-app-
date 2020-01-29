@@ -33,10 +33,8 @@ public class FourthFragment extends Fragment {
         tabLayout.addTab(tabLayout.newTab().setText("C"));
         tabLayout.addTab(tabLayout.newTab().setText("D"));
         final ViewPager viewPager = (ViewPager) view.findViewById(R.id.viewpager);
-        // mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        //mRecyclerView.setLayoutManager(mLayoutManager);
         viewPager.setAdapter(new PagerAdapter(getFragmentManager(), tabLayout.getTabCount()));
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setupWithViewPager(viewPager);

@@ -1,23 +1,14 @@
 package biz.bixer.bixer.Pages;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
-import android.util.MalformedJsonException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.gson.JsonObject;
-
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -86,12 +77,8 @@ new JSONTask().execute("https://bitaps.com/api/block/latest");
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
-                //JSONArray parentArray=parentObject.getJSONArray("");
-//JSONObject finalObject=parentArray.getJSONObject(0);
 String height=parentObject.getString("height");
 String hash=parentObject.getString("hash");
-//String previuos_block_hash=parentObject.getString("previuos_block_hash");
-//String coinbase=parentObject.getString("coinbase");
 String miner=parentObject.getString("miner");
 String transactions=parentObject.getString("transactions");
 String size=parentObject.getString("size");
@@ -153,7 +140,6 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
-
                 String USD=parentObject.getString("USD");
                 String RUB=parentObject.getString("RUB");
                 String EUR=parentObject.getString("EUR");
@@ -164,14 +150,10 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
                 JSONObject parentObje=new JSONObject(finalJs);
                 JSONObject parentObj=new JSONObject(finalJ);
                 String  now=parentObjec.getString("15m");
-              //  String buy=parentObjec.getString("buy");
                 String  no=parentObje.getString("15m");
-               // String bu=parentObje.getString("buy");
                 String  n=parentObj.getString("15m");
-             //   String b=parentObje.getString("buy");
                 return "(USD)bitcoin rate is "+now+"\n"+"\n"+"\n"+"(RUB)bitcoin rate is "+no+"\n"+"\n"+"\n"+"(EUR)bitcoin rate is "+n;
-               // return "height:"+height+" "+"\n"+"hash:"+ hash+"\n"+"miner: "+miner+"\n"+"transactions: "+transactions+"\n"+"size: "+size+"\n"+"bits: "+bits;
-            } catch (
+          } catch (
                     MalformedURLException e)
 
             {
@@ -223,7 +205,6 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
                 String line = "";
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);
-
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
