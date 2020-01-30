@@ -1,4 +1,4 @@
-package biz.bixer.bixer.Pages;
+package biz.bixer.bixer;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;

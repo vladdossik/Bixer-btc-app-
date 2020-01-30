@@ -1,4 +1,4 @@
-package biz.bixer.bixer.Pages;
+package biz.bixer.bixer;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -23,7 +23,6 @@ import com.bumptech.glide.request.target.Target;
 
 import java.util.List;
 
-import biz.bixer.bixer.R;
 import biz.bixer.bixer.models.Article;
 
 
@@ -34,9 +33,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
     private OnItemClickListener onItemClickListener;
 
 
-    public Adapter(List<Article> articles, news_page context) {
+    public Adapter(List<Article> articles, Context context) {
         this.articles = articles;
-
+        this.context = context;
     }
 
     @NonNull

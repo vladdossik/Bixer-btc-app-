@@ -1,30 +1,24 @@
-package biz.bixer.bixer.Pages;
+package biz.bixer.bixer;
 
-import android.app.Fragment;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import biz.bixer.bixer.Adapter;
-import biz.bixer.bixer.MainActivity;
-import biz.bixer.bixer.NewsDetailActivity;
-import biz.bixer.bixer.R;
-import biz.bixer.bixer.Utils;
 import biz.bixer.bixer.api.ApiClient;
 import biz.bixer.bixer.api.ApiInterface;
 import biz.bixer.bixer.models.Article;
@@ -33,7 +27,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class news_page extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+
     public static final String API_KEY = "772025b896434e71b891219596292d84"; //insert API Key
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
@@ -41,30 +36,32 @@ public class news_page extends Fragment implements SwipeRefreshLayout.OnRefreshL
     private Adapter adapter;
     private String TAG = MainActivity.class.getSimpleName();
     private SwipeRefreshLayout swipeRefreshLayout;
-    @Override
-    public View  onCreateView(LayoutInflater inflater, ViewGroup container,
-                            Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.activity_news,container,false);
 
-        swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_layout);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_news);
+
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
         swipeRefreshLayout.setOnRefreshListener(this);
-        recyclerView = view.findViewById(R.id.recyclerView);
-        layoutManager = new LinearLayoutManager(getActivity());
+
+        recyclerView = findViewById(R.id.recyclerView);
+        layoutManager = new LinearLayoutManager(MainActivity.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setNestedScrollingEnabled(false);
 
         onLoadingSwipeRefresh("");
-        return view;
+
     }
+
     public void LoadJson(final String keyword){
 
         swipeRefreshLayout.setRefreshing(true);
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
-        String country = Utils.getCountry();
+        //String country = Utils.getCountry();
         String q = "bitcoin";
         String sortBy = "publishedAt";
         String language = "en";
@@ -87,7 +84,7 @@ public class news_page extends Fragment implements SwipeRefreshLayout.OnRefreshL
                     }
 
                     articles = response.body().getArticle();
-                    //adapter = new Adapter(articles, news_page.this);
+                    adapter = new Adapter(articles, MainActivity.this);
                     recyclerView.setAdapter(adapter);
                     adapter.notifyDataSetChanged();
 
@@ -97,7 +94,7 @@ public class news_page extends Fragment implements SwipeRefreshLayout.OnRefreshL
 
                 } else{
                     swipeRefreshLayout.setRefreshing(false);
-                  //  Toast.makeText(news_page.this, "No Result", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "No Result", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -108,12 +105,15 @@ public class news_page extends Fragment implements SwipeRefreshLayout.OnRefreshL
         });
 
     }
+
     private void initListener(){
 
-      adapter.setOnItemClickListener(new Adapter.OnItemClickListener() {
+        adapter.setOnItemClickListener(new Adapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Intent intent = new Intent(getActivity(), NewsDetailActivity.class);
+                Intent intent = new Intent(MainActivity.this, NewsDetailActivity.class);
+
+
                 Article article = articles.get(position);
                 intent.putExtra("url", article.getUrl());
                 intent.putExtra("title", article.getTitle());
@@ -121,19 +121,21 @@ public class news_page extends Fragment implements SwipeRefreshLayout.OnRefreshL
                 intent.putExtra("date", article.getPublishedAt());
                 intent.putExtra("source", article.getSource().getName());
                 intent.putExtra("author", article.getAuthor());
-
+                startActivity(new Intent(MainActivity.this, NewsDetailActivity.class));
                 startActivity(intent);
             }
         });
     }
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
-        super.onCreateOptionsMenu(menu,inflater);
-        SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         final SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
         MenuItem searchMenuItem = menu.findItem(R.id.action_search);
 
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         searchView.setQueryHint("Search Recent News...");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -150,8 +152,9 @@ public class news_page extends Fragment implements SwipeRefreshLayout.OnRefreshL
         });
 
         searchMenuItem.getIcon().setVisible(false, false);
-    }
 
+        return true;
+    }
 
     @Override
     public void onRefresh() {

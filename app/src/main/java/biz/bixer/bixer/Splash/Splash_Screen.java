@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import biz.bixer.bixer.Pages.MainActivity;
+import biz.bixer.bixer.MainActivity;
 
 public class Splash_Screen extends AppCompatActivity {
 
