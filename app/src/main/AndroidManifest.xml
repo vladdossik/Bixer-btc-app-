@@ -13,19 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".NewsDetailActivity"
-<<<<<<< HEAD
-            android:theme="@style/SplashTheme">
-
-        </activity>
-        <activity android:name=".MainActivity"
+            android:name=".Pages.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/SplashTheme"
+            android:theme="@style/SplashTheme">
             android:screenOrientation="portrait">
-=======
-            android:theme="@style/SplashTheme"></activity>
-        <activity android:name=".MainActivity">
->>>>>>> master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,4 +24,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
