@@ -113,6 +113,10 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(MainActivity.this, NewsDetailActivity.class);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
                 Article article = articles.get(position);
                 intent.putExtra("url", article.getUrl());
                 intent.putExtra("title", article.getTitle());
@@ -120,7 +124,11 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 intent.putExtra("date", article.getPublishedAt());
                 intent.putExtra("source", article.getSource().getName());
                 intent.putExtra("author", article.getAuthor());
+<<<<<<< HEAD
 
+=======
+                startActivity(new Intent(MainActivity.this, NewsDetailActivity.class));
+>>>>>>> master
                 startActivity(intent);
             }
         });
