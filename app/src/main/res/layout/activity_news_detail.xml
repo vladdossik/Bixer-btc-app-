@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@color/colorBackground"
-    tools:context=".Pages.NewsDetailActivity">
+    tools:context=".NewsDetailActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -70,14 +70,12 @@
                 app:contentInsetStart="0dp"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
                 <LinearLayout
                     android:id="@+id/title_appbar"
                     android:clickable="false"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
-
                     <TextView
                         android:id="@+id/title_on_appbar"
                         style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
@@ -89,7 +87,6 @@
                         android:drawablePadding="10dp"
                         android:singleLine="true"
                         android:ellipsize="end"/>
-
                     <TextView
                         android:id="@+id/subtitle_on_appbar"
                         style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
@@ -101,15 +98,10 @@
                         android:drawablePadding="10dp"
                         android:singleLine="true"
                         android:ellipsize="end"/>
-
                 </LinearLayout>
-
             </android.support.v7.widget.Toolbar>
-
         </android.support.design.widget.CollapsingToolbarLayout>
-
     </android.support.design.widget.AppBarLayout>
-
     <android.support.v4.widget.NestedScrollView
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:fitsSystemWindows="true"
@@ -120,7 +112,6 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <android.support.v7.widget.CardView
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
                 android:layout_width="match_parent"
@@ -136,7 +127,7 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/title"
-                        android:textColor="@color/colorTextTitle"
+                        android:textColor="#808080"
                         android:textStyle="bold"
                         android:fontFamily="sans-serif-light"
                         android:textSize="19sp"
@@ -144,7 +135,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         />
-
                     <TextView
                         android:id="@+id/time"
                         android:layout_width="wrap_content"
@@ -156,10 +146,8 @@
                         android:singleLine="true"
                         android:ellipsize="end"
                         android:text="a time ago" />
-
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
-
             <android.support.v7.widget.CardView
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
                 android:layout_marginTop="12dp"
@@ -168,11 +156,9 @@
                 android:layout_height="wrap_content"
                 app:cardElevation="@dimen/cardview_default_elevation"
                 app:cardCornerRadius="0dp">
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
                     <ProgressBar
                         app:layout_behavior="@string/appbar_scrolling_view_behavior"
                         android:id="@+id/progress_bar"
@@ -180,26 +166,20 @@
                         android:layout_marginBottom="70dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
-
                     <WebView
                         app:layout_behavior="@string/appbar_scrolling_view_behavior"
                         android:id="@+id/webView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
-
-
                 </RelativeLayout>
-
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
-
     </android.support.v4.widget.NestedScrollView>
 
     <FrameLayout
         android:id="@+id/date_behavior"
         app:layout_anchor="@+id/appbar"
-
         android:adjustViewBounds="true"
         app:layout_anchorGravity="right|end|bottom"
         android:clickable="false"

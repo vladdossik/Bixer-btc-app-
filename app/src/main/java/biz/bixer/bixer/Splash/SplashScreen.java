@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import biz.bixer.bixer.Pages.MainActivity;
+import biz.bixer.bixer.MainActivity;
 import biz.bixer.bixer.R;
 
 public class SplashScreen extends Activity {
@@ -18,7 +18,7 @@ public class SplashScreen extends Activity {
             public void run()
             {
                 try{
-                    sleep(3000);
+                    sleep(10000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }finally{
