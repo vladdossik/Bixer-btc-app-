@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity
         drawer.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.tvBackground));
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        /*Fragment fragment = null;
+        Fragment fragment = null;
         Class fragmentClass = null;
-        fragmentClass=StatisticsFragment.class;
+        fragmentClass=Bitcoin_checker.class;
         try {
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity
         }
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-        // Выделяем выбранный пункт меню в шторке*/
+
     }
     private static long back_pressed;
     @Override
