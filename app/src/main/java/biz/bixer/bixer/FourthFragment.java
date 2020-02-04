@@ -1,4 +1,4 @@
-package biz.bixer.bixer.Pages;
+package biz.bixer.bixer;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;

@@ -1,20 +1,20 @@
-package biz.bixer.bixer.Pages;
+package biz.bixer.bixer;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AlertDialog;
-import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.content.ContextCompat;
-import biz.bixer.bixer.R;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     @Override
@@ -31,24 +31,14 @@ public class MainActivity extends AppCompatActivity
         drawer.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.tvBackground));
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        Fragment fragment = null;
-        Class fragmentClass = null;
-        fragmentClass=Bitcoin_checker.class;
-        try {
-            fragment = (Fragment) fragmentClass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-
+       
     }
     private static long back_pressed;
     @Override
     public void onBackPressed() {
         Fragment fragment = null;
         Class fragmentClass = null;
-        fragmentClass=FifthFragment.class;
+        fragmentClass= FifthFragment.class;
         if (back_pressed + 500 > System.currentTimeMillis()) {
             new AlertDialog.Builder(this)
                     .setTitle("Really exit?")
@@ -94,7 +84,7 @@ public class MainActivity extends AppCompatActivity
         }
         if(id==R.id.action_website)
         {
-            fragmentClass=website.class;
+            fragmentClass= website.class;
         }
         try {
             fragment = (Fragment) fragmentClass.newInstance();
@@ -122,17 +112,17 @@ public class MainActivity extends AppCompatActivity
             fragmentClass=Bitcoin_checker.class;
         }
         else if (id == R.id.nav_news) {
-            fragmentClass=website.class;
+            fragmentClass=Bitcoin_checker.class;
         } else if (id == R.id.nav_about) {
-            fragmentClass=FourthFragment.class;
+            fragmentClass= FourthFragment.class;
         } else if (id == R.id.nav_share) {
             fragmentClass=FifthFragment.class;
         } else if (id == R.id.nav_help) {
-            fragmentClass=SixthFragment.class;
+            fragmentClass= SixthFragment.class;
         }
         else if(id==R.id.nav_analytic)
         {
-            fragmentClass=StatisticsFragment.class;
+            fragmentClass= StatisticsFragment.class;
         }
         try {
             fragment = (Fragment) fragmentClass.newInstance();

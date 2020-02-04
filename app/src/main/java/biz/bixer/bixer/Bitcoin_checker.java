@@ -1,4 +1,4 @@
-package biz.bixer.bixer.Pages;
+package biz.bixer.bixer;
 
 import android.net.Uri;
 import android.os.Bundle;
