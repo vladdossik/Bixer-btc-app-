@@ -15,7 +15,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.content.ContextCompat;
 import biz.bixer.bixer.R;
-
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     @Override
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity
         drawer.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.tvBackground));
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        Fragment fragment = null;
+        /*Fragment fragment = null;
         Class fragmentClass = null;
         fragmentClass=StatisticsFragment.class;
         try {
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity
         }
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-        // Выделяем выбранный пункт меню в шторке
+        // Выделяем выбранный пункт меню в шторке*/
     }
     private static long back_pressed;
     @Override

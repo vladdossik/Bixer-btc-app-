@@ -3,7 +3,7 @@
     <color name="colorPrimary">#25252f</color>
     <color name="colorPrimaryDark">#25252F</color>
     <color name="colorAccent">#00FFFF</color>
-    <color name="tvBackground">#CCCCCC</color>
+    <color name="tvBackground">#25252f</color>
     <color name="formenu">#CCCCCC</color>
     <color name="colorBackground">#f9f9fa</color>
     <color name="colorTextSubtitle">#4e4e4e</color>
