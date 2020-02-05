@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
+
         }
         // Вставляем фрагмент, заменяя текущий фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();
