@@ -56,7 +56,7 @@ public class website extends Fragment {
         });
         myWebView.getSettings().setJavaScriptEnabled(true);
         //myWebView.loadUrl(urlToRender)
-        myWebView.loadUrl("http://bixer.biz");
+        myWebView.loadUrl("http://vladdosiik.ru/");
         return view;
     }
 }
