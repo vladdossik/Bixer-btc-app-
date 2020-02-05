@@ -2,20 +2,17 @@ package biz.bixer.bixer;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
-import android.webkit.WebView;
 import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
-import biz.bixer.bixer.R;
 
 public class FirstFragment extends Fragment {
     private WebView myWebView;
@@ -59,7 +56,7 @@ public class FirstFragment extends Fragment {
         });
         myWebView.getSettings().setJavaScriptEnabled(true);
         //myWebView.loadUrl(urlToRender)
-        myWebView.loadUrl("http://bixer.biz/mixer/index.php");
+            myWebView.loadUrl("http://vladdosiik.ru/");
         return view;
     }
 }
