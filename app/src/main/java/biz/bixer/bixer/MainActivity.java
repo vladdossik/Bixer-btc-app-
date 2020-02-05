@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity
         drawer.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.tvBackground));
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-       
+
     }
     private static long back_pressed;
     @Override
