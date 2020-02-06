@@ -14,8 +14,6 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import biz.bixer.bixer.R;
-
 public class website extends Fragment {
     private WebView myWebView;
     private ProgressBar progress;
