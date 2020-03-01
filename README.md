@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Bixer-btc-app-
 my first android app. 
 You can download this application by clicking on the link: https://play.google.com/store/apps/details?id=biz.bixer.bixer
