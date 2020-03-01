@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.com/Bixxxer/projectname.svg?branch=master)](https://travis-ci.com/Bixxxer/Bixer-btc-app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.com/Bixxxer/Bixer-btc-app-.svg?branch=master)](https://travis-ci.com/Bixxxer/Bixer-btc-app-)
 
 # Bixer-btc-app-
 my first android app. 
