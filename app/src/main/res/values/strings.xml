@@ -21,7 +21,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="about_text">
         The mixing fee is randomized between 0.5%-1%.
-You can specify  1 adress.
+You can specify  1 address.
 You can mix from 0.05(multiplied by the number of output adresses you specify) btc to 4 btc.\n
 You have 24 hours to send in my payment.
 If you choose "fast" then within about an hour. If you choose "slow" then within about 4 hours. If you specify more than one output address,your payment will be sent to you in separate transactions for each output address,
