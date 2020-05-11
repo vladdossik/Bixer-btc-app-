@@ -128,13 +128,9 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
 
         }
-
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-   
         item.setChecked(true);
-        // Выводим выбранный пункт в заголовке
-        // setTitle(item.getTitle());
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
