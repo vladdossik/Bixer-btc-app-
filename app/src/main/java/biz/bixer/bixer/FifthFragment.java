@@ -85,7 +85,7 @@ public class FifthFragment extends Fragment {
         { @Override
         public void onClick(View v)
         {
-            Uri address = Uri.parse("https://github.com/Bixxxer");
+            Uri address = Uri.parse("https://github.com/vladdossik");
             Intent openlinkIntent = new Intent(Intent.ACTION_VIEW, address);
             startActivity(openlinkIntent);
         }
