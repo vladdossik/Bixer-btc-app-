@@ -128,10 +128,10 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
 
         }
-        // Вставляем фрагмент, заменяя текущий фрагмент
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-        // Выделяем выбранный пункт меню в шторке
+   
         item.setChecked(true);
         // Выводим выбранный пункт в заголовке
         // setTitle(item.getTitle());
