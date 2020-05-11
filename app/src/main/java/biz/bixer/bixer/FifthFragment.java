@@ -34,6 +34,7 @@ public class FifthFragment extends Fragment {
         ImageButton imageButton6=(ImageButton)view.findViewById(R.id.imageButton6);
         ImageButton imageButton7=(ImageButton)view.findViewById(R.id.imageButton7);
         ImageButton imageButton=(ImageButton)view.findViewById(R.id.imageButton);
+
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
