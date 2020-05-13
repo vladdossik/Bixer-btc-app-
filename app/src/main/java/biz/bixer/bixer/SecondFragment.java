@@ -57,8 +57,6 @@ new JSONTask().execute("https://bitaps.com/api/block/latest");
     public class JSONTask extends AsyncTask<String, String, String> {
         @Override
         protected String doInBackground(String... params) {
-
-
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
@@ -71,7 +69,6 @@ new JSONTask().execute("https://bitaps.com/api/block/latest");
                 String line = "";
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);
-
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
