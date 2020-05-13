@@ -54,9 +54,7 @@ new JSONTask().execute("https://bitaps.com/api/block/latest");
         });
         return view;
     }
-
     public class JSONTask extends AsyncTask<String, String, String> {
-
         @Override
         protected String doInBackground(String... params) {
 
