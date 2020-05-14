@@ -21,13 +21,11 @@ public class website extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         super.onCreate(savedInstanceState);
         View view= inflater.inflate(R.layout.fragment_news1, container, false);
         mContext=getActivity().getApplicationContext();
         myWebView=(WebView)view.findViewById(R.id.web_view);
         progress=(ProgressBar)view.findViewById(R.id.pb);
-        //   progress.setMax(100);
         WebSettings webSettings=myWebView.getSettings();
         // webSettings.setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new WebViewClient(){

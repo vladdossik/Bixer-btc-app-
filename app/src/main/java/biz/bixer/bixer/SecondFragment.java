@@ -197,7 +197,6 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
                 JSONObject parentObject=new JSONObject(finalJson);
                String blocksize=parentObject.getString("blocksize");
                return "blocksize: "+blocksize+" bytes";
-
             } catch (
                     MalformedURLException e)
             {
