@@ -27,7 +27,6 @@ public class website extends Fragment {
         myWebView=(WebView)view.findViewById(R.id.web_view);
         progress=(ProgressBar)view.findViewById(R.id.pb);
         WebSettings webSettings=myWebView.getSettings();
-        // webSettings.setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new WebViewClient(){
             @Override
             public void onPageStarted(WebView view,String url,Bitmap favicon)
