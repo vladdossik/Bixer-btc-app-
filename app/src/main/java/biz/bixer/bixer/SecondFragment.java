@@ -148,18 +148,15 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
                 return "(USD)bitcoin rate is "+now+"\n"+"\n"+"\n"+"(RUB)bitcoin rate is "+no+"\n"+"\n"+"\n"+"(EUR)bitcoin rate is "+n;
           } catch (
                     MalformedURLException e)
-
             {
                 e.printStackTrace();
             } catch (
                     IOException e)
-
             {
                 e.printStackTrace();
             } catch (JSONException e) {
                 e.printStackTrace();
             } finally
-
             {
                 if (connection != null) {
                     connection.disconnect();
