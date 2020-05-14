@@ -75,11 +75,8 @@ public class StatisticsFragment extends Fragment {
         return view;
     }
     public class JSONTask extends AsyncTask<String, String, String> {
-
         @Override
         protected String doInBackground(String... params) {
-
-
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
@@ -92,7 +89,6 @@ public class StatisticsFragment extends Fragment {
                 String line = "";
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);
-
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
