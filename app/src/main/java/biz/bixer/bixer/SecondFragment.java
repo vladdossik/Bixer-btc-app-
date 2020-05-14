@@ -117,8 +117,6 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
 
         @Override
         protected String doInBackground(String... params) {
-
-
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
