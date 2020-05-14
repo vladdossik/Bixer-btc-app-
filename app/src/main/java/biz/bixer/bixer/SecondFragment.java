@@ -178,11 +178,8 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
         }
     }
     public class JSONTa extends AsyncTask<String, String, String> {
-
         @Override
         protected String doInBackground(String... params) {
-
-
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
@@ -203,12 +200,10 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
 
             } catch (
                     MalformedURLException e)
-
             {
                 e.printStackTrace();
             } catch (
                     IOException e)
-
             {
                 e.printStackTrace();
             } catch (JSONException e) {
