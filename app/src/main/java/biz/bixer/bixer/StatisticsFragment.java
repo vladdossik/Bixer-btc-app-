@@ -178,11 +178,8 @@ return "difficulty of Bitcoin network: "+difficulty;
         }
     }
     public class JSONTa extends AsyncTask<String, String, String> {
-
         @Override
         protected String doInBackground(String... params) {
-
-
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
@@ -195,17 +192,13 @@ return "difficulty of Bitcoin network: "+difficulty;
                 String line = "";
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);
-
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
-
                 String blocktime=parentObject.getString("blocktime");
-
                 return "blocktime in the Bitcoin network: "+blocktime+" seconds";
             } catch (
                     MalformedURLException e)
-
             {
                 e.printStackTrace();
             } catch (
