@@ -105,7 +105,6 @@ return "difficulty of Bitcoin network: "+difficulty;
             } catch (JSONException e) {
                 e.printStackTrace();
             } finally
-
             {
                 if (connection != null) {
                     connection.disconnect();
@@ -127,11 +126,8 @@ return "difficulty of Bitcoin network: "+difficulty;
         }
     }
     public class JSONTas extends AsyncTask<String, String, String> {
-
         @Override
         protected String doInBackground(String... params) {
-
-
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
