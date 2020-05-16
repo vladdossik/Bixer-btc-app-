@@ -140,22 +140,17 @@ return "difficulty of Bitcoin network: "+difficulty;
                 String line = "";
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);
-
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
-
                 String hashrate=parentObject.getString("hashrate");
-
                 return "Hashrate of Bitcoin network: "+hashrate;
             } catch (
                     MalformedURLException e)
-
             {
                 e.printStackTrace();
             } catch (
                     IOException e)
-
             {
                 e.printStackTrace();
             } catch (JSONException e) {
