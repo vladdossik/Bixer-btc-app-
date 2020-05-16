@@ -203,7 +203,6 @@ return "difficulty of Bitcoin network: "+difficulty;
                 e.printStackTrace();
             } catch (
                     IOException e)
-
             {
                 e.printStackTrace();
             } catch (JSONException e) {
