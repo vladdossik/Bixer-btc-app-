@@ -92,9 +92,7 @@ public class StatisticsFragment extends Fragment {
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
-
                 String difficulty=parentObject.getString("difficulty");
-
 return "difficulty of Bitcoin network: "+difficulty;
             } catch (
                     MalformedURLException e)
