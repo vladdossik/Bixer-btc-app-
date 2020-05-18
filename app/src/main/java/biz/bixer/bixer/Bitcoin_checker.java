@@ -46,9 +46,7 @@ public class Bitcoin_checker extends Fragment {
         usdValue = (TextView) view.findViewById(R.id.usd_value);
         refreshButton =(Button)view.findViewById(R.id.refresh_button);
         btcValue = (EditText) view.findViewById(R.id.btc_value);
-
         new FetchBtcTask().execute(BTC_URL);
-
         refreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,24 +54,17 @@ public class Bitcoin_checker extends Fragment {
             }
         });
         final Handler handler = new Handler();
-
-
         final int delay = 9000;
-
         handler.postDelayed(new Runnable() {
             public void run() {
-
                 handler.postDelayed(this, delay);
                 new FetchBtcTask().execute(BTC_URL);
                 Log.i(TAG, "run: " + usdValue.getText());
             }
         }, delay);
-
         btcValue.addTextChangedListener(new TextWatcher() {
-
             public void afterTextChanged(Editable s) {
             }
-
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
 
