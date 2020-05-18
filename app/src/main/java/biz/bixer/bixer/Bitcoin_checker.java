@@ -74,7 +74,6 @@ public class Bitcoin_checker extends Fragment {
         });
         return view;
     }
-
     public static String getResponseFromHttpUrl(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
