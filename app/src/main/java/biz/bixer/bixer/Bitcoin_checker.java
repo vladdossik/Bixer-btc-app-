@@ -109,21 +109,16 @@ public class Bitcoin_checker extends Fragment {
         JSONObject usd = bpi.getJSONObject("USD");
         return usd.getString("rate_float");
     }
-    
     public class FetchBtcTask extends AsyncTask<String, Void, String> {
-
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
         }
-
         @Override
         protected String doInBackground(String... params) {
-
             if (params.length == 0) {
                 return null;
             }
-
             String location = params[0];
             URL weatherRequestUrl = urlBuilder(location);
 
