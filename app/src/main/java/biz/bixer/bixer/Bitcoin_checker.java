@@ -103,16 +103,13 @@ public class Bitcoin_checker extends Fragment {
             return null;
         }
     }
-
     private String jsonParser(String jsonWeatherResponse) throws JSONException {
         JSONObject jsonObject = new JSONObject(jsonWeatherResponse);
         JSONObject bpi = jsonObject.getJSONObject("bpi");
         JSONObject usd = bpi.getJSONObject("USD");
-
         return usd.getString("rate_float");
     }
-
-
+    
     public class FetchBtcTask extends AsyncTask<String, Void, String> {
 
         @Override
