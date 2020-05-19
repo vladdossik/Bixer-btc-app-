@@ -93,7 +93,6 @@ public class Bitcoin_checker extends Fragment {
     private URL urlBuilder(String uri) {
         Uri builtUri = Uri.parse(uri).buildUpon().build();
         URL url;
-
         try {
             url = new URL(builtUri.toString());
             return url;
