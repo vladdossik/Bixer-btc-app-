@@ -81,7 +81,6 @@ String bits=parentObject.getString("bits");
 return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"transactions: "+transactions+"\n"+"size: "+size+"\n"+"bits: "+bits;
             } catch (
                     MalformedURLException e)
-
             {
                 e.printStackTrace();
             } catch (
@@ -112,7 +111,6 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
         }
     }
     public class JSONTas extends AsyncTask<String, String, String> {
-
         @Override
         protected String doInBackground(String... params) {
             HttpURLConnection connection = null;
