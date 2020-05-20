@@ -26,8 +26,6 @@ public class SixthFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sixth, container, false);
-        //super.onCreate(savedInstanceState);
-       // setContentView(R.layout.fragment_third);
         Button buttonSend=(Button)view.findViewById(R.id.buttonSend);
        // buttonSend = (Button) findViewById(R.id.buttonSend);
        // final EditText textTo=(EditText)view.findViewById(R.id.editTextTo);
