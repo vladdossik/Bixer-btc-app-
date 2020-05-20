@@ -29,12 +29,10 @@ public class SixthFragment extends Fragment {
         Button buttonSend=(Button)view.findViewById(R.id.buttonSend);
       final  EditText textSubject=(EditText)view.findViewById(R.id.editTextSubject);
         final EditText textMessage=(EditText)view.findViewById(R.id.editTextMessage);
-     
         buttonSend.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-               // String to = textTo.getText().toString();
                 String subject = textSubject.getText().toString();
                 String message = textMessage.getText().toString();
                 Intent email = new Intent(Intent.ACTION_SEND);
