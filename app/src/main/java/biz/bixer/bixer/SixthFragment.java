@@ -29,9 +29,7 @@ public class SixthFragment extends Fragment {
         Button buttonSend=(Button)view.findViewById(R.id.buttonSend);
       final  EditText textSubject=(EditText)view.findViewById(R.id.editTextSubject);
         final EditText textMessage=(EditText)view.findViewById(R.id.editTextMessage);
-       // textSubject = (EditText) findViewById(R.id.editTextSubject);
-     //   textMessage = (EditText) findViewById(R.id.editTextMessage);
-
+     
         buttonSend.setOnClickListener(new View.OnClickListener() {
 
             @Override
