@@ -86,13 +86,11 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
                 e.printStackTrace();
             } catch (
                     IOException e)
-
             {
                 e.printStackTrace();
             } catch (JSONException e) {
                 e.printStackTrace();
             } finally
-
             {
                 if (connection != null) {
                     connection.disconnect();
