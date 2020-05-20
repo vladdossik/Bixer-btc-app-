@@ -125,7 +125,6 @@ return "height: "+height+" "+"\n"+"hash: "+ hash+"\n"+"miner: "+miner+"\n"+"tran
                 String line = "";
                 while ((line = reader.readLine()) != null) {
                     buffer.append(line);
-
                 }
                 String finalJson=buffer.toString();
                 JSONObject parentObject=new JSONObject(finalJson);
