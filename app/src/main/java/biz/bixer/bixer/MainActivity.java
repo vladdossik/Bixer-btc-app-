@@ -1,5 +1,4 @@
 package biz.bixer.bixer;
-
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
