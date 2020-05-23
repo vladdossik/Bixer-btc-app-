@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
