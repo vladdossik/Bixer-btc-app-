@@ -15,7 +15,6 @@ Menu. From this page you can get to all the others.
 
 Mixer page. This is also a webview, but I use http://bixer.biz/. Anonymization service, which complicates or makes it almost impossible to monitor transactions in the Bitcoin system. Client's funds are divided into small parts, after which these parts are mixed in random order with parts of other customers. As a result of all operations, a specified amount of cryptocurrency comes to the final recipient, but in small batches from various randomly selected participants.
 
-![photo_2019-07-02_22-03-04](https://user-images.githubusercontent.com/45006912/60615228-51f43880-9dd7-11e9-8963-532427d8364b.jpg)
 
 Analytics and statistics pages.Here you can find the price of bitcoin, information about the last block, average block size for the last 24 hours, the hashrate, the average block calculation time, the average block size, the average number of transactions per second and the network commission analysis for the last 36 blocks. I used API of blockchaininfo(https://www.blockchain.com/ru/api).
 
