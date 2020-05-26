@@ -33,8 +33,3 @@ About page. Here I added information about Bitcoin mixer, analytics, news and ab
 Share page. Here I added small pictures, clicking on which will help you find us in a telegram, instagram, twitter, github, facebook. There is also a link to the site. By clicking on the share button you can share a link to the site using the functions of the smartphone. This page needs some work (many links have changed).
 
 ![photo_2019-07-02_22-03-00](https://user-images.githubusercontent.com/45006912/60615439-ca5af980-9dd7-11e9-8f51-133b9e0e50d0.jpg)
-
-Help page.This page is used to contact the developer. It is necessary to fill in the fields and clicking the Send button gives the client the choice of which email-client to use. It was too easy, since I used Youtube when implementing this part of the project.
-
-![photo_2019-07-02_22-02-59](https://user-images.githubusercontent.com/45006912/60615487-e52d6e00-9dd7-11e9-946a-2675c8f93812.jpg)
-
