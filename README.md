@@ -29,5 +29,3 @@ About page. Here I added information about Bitcoin mixer, analytics, news and ab
 
 ![photo_2019-07-02_22-03-01](https://user-images.githubusercontent.com/45006912/60615320-7f40e680-9dd7-11e9-8147-1e3c2d7000a2.jpg)
 
-Share page. Here I added small pictures, clicking on which will help you find us in a telegram, instagram, twitter, github, facebook. There is also a link to the site. By clicking on the share button you can share a link to the site using the functions of the smartphone. This page needs some work (many links have changed).
-
