@@ -25,4 +25,3 @@ News page. At this stage, I realized that all applications related to news about
 
 ![photo_2019-07-02_22-03-04 (2)](https://user-images.githubusercontent.com/45006912/60615262-6801f900-9dd7-11e9-931a-eb7a5f267463.jpg)
 
-About page. Here I added information about Bitcoin mixer, analytics, news and about us.Here I used RecyclerView. For me it was a bit difficult, because I could not set up the correct work for a long time.
