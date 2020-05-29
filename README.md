@@ -23,4 +23,3 @@ Analytics and statistics pages.Here you can find the price of bitcoin, informati
 
 News page. At this stage, I realized that all applications related to news about cryptocurrency use only 1 news resource. So, I decided to use a little more .... 9). This is done so that everyone has a choice. I used webview to display news resources. This part needs some work. Since it was necessary to write the application in the shortest lines, frequent repetition of the code was used.
 
-
