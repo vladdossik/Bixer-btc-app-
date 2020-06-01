@@ -21,4 +21,4 @@ Analytics and statistics pages.Here you can find the price of bitcoin, informati
 ![photo_2019-07-02_22-03-03](https://user-images.githubusercontent.com/45006912/60615386-aa2b3a80-9dd7-11e9-97ff-498552ce6789.jpg)
 ![photo_2019-07-02_22-03-02 (2)](https://user-images.githubusercontent.com/45006912/60615400-b31c0c00-9dd7-11e9-955b-acf985e0f784.jpg)
 
-News page. At this stage, I realized that all applications related to news about cryptocurrency use only 1 news resource. So, I decided to use a little more .... 9). This is done so that everyone has a choice. I used webview to display news resources. This part needs some work. Since it was necessary to write the application in the shortest lines, frequent repetition of the code was used.
+News page. At this stage, I realized that all applications related to news about cryptocurrency use only 1 news resource. So, I decided to use a little more .... 9). This is done so that everyone has a choice. I used webview to display news resources. This part needs some work. Since it was necessary to write the application in the shortest lines
