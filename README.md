@@ -17,6 +17,3 @@ Mixer page. This is also a webview, but I use http://bixer.biz/. Anonymization s
 
 
 Analytics and statistics pages.Here you can find the price of bitcoin, information about the last block, average block size for the last 24 hours, the hashrate, the average block calculation time, the average block size, the average number of transactions per second and the network commission analysis for the last 36 blocks. I used API of blockchaininfo(https://www.blockchain.com/ru/api).
-
-![photo_2019-07-02_22-03-03](https://user-images.githubusercontent.com/45006912/60615386-aa2b3a80-9dd7-11e9-97ff-498552ce6789.jpg)
-![photo_2019-07-02_22-03-02 (2)](https://user-images.githubusercontent.com/45006912/60615400-b31c0c00-9dd7-11e9-955b-acf985e0f784.jpg)
