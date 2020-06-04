@@ -1,14 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'key1'
-            keyPassword 'vladik7540'
-            storeFile file('/Users/user/Desktop/projects/Bixer-btc-app-/bixer.jks')
-            storePassword 'vladik7540'
-        }
-    }
+
+
     compileSdkVersion 27
     defaultConfig {
         applicationId "biz.bixer.bixer"
@@ -38,7 +32,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-            signingConfig signingConfigs.config
+           
         }
     }
 }
