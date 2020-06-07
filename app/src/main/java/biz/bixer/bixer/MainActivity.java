@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity
     public void onBackPressed() {
         Fragment fragment = null;
         Class fragmentClass = null;
-        fragmentClass= FifthFragment.class;
         if (back_pressed + 500 > System.currentTimeMillis()) {
             new AlertDialog.Builder(this)
                     .setTitle("Really exit?")
@@ -48,9 +47,6 @@ public class MainActivity extends AppCompatActivity
                             MainActivity.super.onBackPressed();
                         }
                     }).create().show();
-        }
-        else {
-            fragmentClass=FifthFragment.class;
         }
         back_pressed = System.currentTimeMillis();
         try {
@@ -72,9 +68,6 @@ public class MainActivity extends AppCompatActivity
         Class fragmentClass = null;
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_home) {
-            fragmentClass=FifthFragment.class;
-        }
         if(id==R.id.action_website)
         {
             fragmentClass= website.class;
@@ -106,9 +99,8 @@ public class MainActivity extends AppCompatActivity
         }
        else if (id == R.id.nav_about) {
             fragmentClass= FourthFragment.class;
-        } else if (id == R.id.nav_share) {
-            fragmentClass=FifthFragment.class;
-        } else if (id == R.id.nav_help) {
+        }
+         else if (id == R.id.nav_help) {
             fragmentClass= SixthFragment.class;
         }
         else if(id==R.id.nav_analytic)
