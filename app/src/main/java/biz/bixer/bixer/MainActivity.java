@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
-        //noinspection SimplifiableIfStatement
         if(id==R.id.action_website)
         {
             fragmentClass= website.class;
