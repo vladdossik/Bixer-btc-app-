@@ -87,8 +87,7 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
-
-          if (id == R.id.nav_analytics) {
+       if (id == R.id.nav_analytics) {
             fragmentClass = SecondFragment.class;
         }
         else if(id == R.id.nav_checker) {
