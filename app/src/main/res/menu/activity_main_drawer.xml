@@ -5,12 +5,6 @@
     tools:showIn="navigation_view" >
 
     <group android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/nav_mixer"
-            android:icon="@drawable/ic_action_mixer"
-            android:title="Mixer"
-            android:textColor="#CCCCCC"/>
         <item
             android:id="@+id/nav_analytics"
 android:icon="@drawable/ic_action_analytics"
