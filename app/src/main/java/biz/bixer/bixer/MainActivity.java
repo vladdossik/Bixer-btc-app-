@@ -66,15 +66,6 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
-        if(id==R.id.action_website)
-        {
-            fragmentClass= website.class;
-        }
-        try {
-            fragment = (Fragment) fragmentClass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         // Вставляем фрагмент, заменяя текущий фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
