@@ -28,10 +28,7 @@ public class FourthFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fourth, container, false);
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
-        tabLayout.addTab(tabLayout.newTab().setText("A"));
-        tabLayout.addTab(tabLayout.newTab().setText("B"));
-        tabLayout.addTab(tabLayout.newTab().setText("C"));
-        tabLayout.addTab(tabLayout.newTab().setText("D"));
+
         final ViewPager viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -48,12 +45,10 @@ public class FourthFragment extends Fragment {
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-
             }
 
         });
