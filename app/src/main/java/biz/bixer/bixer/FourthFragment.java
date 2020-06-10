@@ -37,20 +37,16 @@ public class FourthFragment extends Fragment {
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
             }
-
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
             }
-
         });
 
         return view;
