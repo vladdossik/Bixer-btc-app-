@@ -82,9 +82,6 @@ public class MainActivity extends AppCompatActivity
         else if(id == R.id.nav_checker) {
             fragmentClass=Bitcoin_checker.class;
         }
-       else if (id == R.id.nav_about) {
-            fragmentClass= FourthFragment.class;
-        }
          else if (id == R.id.nav_help) {
             fragmentClass= SixthFragment.class;
         }

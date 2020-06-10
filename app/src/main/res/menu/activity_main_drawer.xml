@@ -23,12 +23,6 @@ android:icon="@drawable/ic_action_analytics"
             android:title="Bitcoin checker"
             android:textColor="#CCCCCC"
             />
-
-        <item
-            android:id="@+id/nav_about"
-android:icon="@drawable/ic_action_about"
-            android:title="About"
-            android:textColor="#CCCCCC"/>
         <item
                 android:id="@+id/nav_help"
           android:icon="@drawable/ic_action_help"
