@@ -64,9 +64,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Fragment fragment = null;
-        Class fragmentClass = null;
         int id = item.getItemId();
-        // Вставляем фрагмент, заменяя текущий фрагмент
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
         return super.onOptionsItemSelected(item);
@@ -74,7 +73,6 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Создадим новый фрагмент
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
