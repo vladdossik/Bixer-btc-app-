@@ -76,18 +76,12 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
-       if (id == R.id.nav_analytics) {
-            fragmentClass = SecondFragment.class;
-        }
-        else if(id == R.id.nav_checker) {
+      
+         if(id == R.id.nav_checker) {
             fragmentClass=Bitcoin_checker.class;
         }
          else if (id == R.id.nav_help) {
             fragmentClass= SixthFragment.class;
-        }
-        else if(id==R.id.nav_analytic)
-        {
-            fragmentClass= StatisticsFragment.class;
         }
         try {
             fragment = (Fragment) fragmentClass.newInstance();
