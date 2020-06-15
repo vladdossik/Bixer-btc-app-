@@ -13,7 +13,6 @@ import biz.bixer.bixer.R;
 
 public class FragmentTab extends Fragment {
     RecyclerView mRecyclerView;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
