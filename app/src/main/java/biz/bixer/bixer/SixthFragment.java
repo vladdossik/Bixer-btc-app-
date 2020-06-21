@@ -1,5 +1,4 @@
 package biz.bixer.bixer;
-
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,8 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import biz.bixer.bixer.R;
-
-
 public class SixthFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
