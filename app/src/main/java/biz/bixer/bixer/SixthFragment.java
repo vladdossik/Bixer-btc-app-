@@ -18,11 +18,6 @@ import biz.bixer.bixer.R;
 
 
 public class SixthFragment extends Fragment {
-    private Button buttonSend;
-    private EditText textTo;
-    private EditText textSubject;
-    private EditText textMessage;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sixth, container, false);
@@ -36,15 +31,10 @@ public class SixthFragment extends Fragment {
                 String subject = textSubject.getText().toString();
                 String message = textMessage.getText().toString();
                 Intent email = new Intent(Intent.ACTION_SEND);
-//Указываем получателя
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"bixersupport@protonmail.com"});
-//Устанавливаем Тему сообщения
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"vladdosiik7540@gmail.com"});
                 email.putExtra(Intent.EXTRA_SUBJECT, subject);
-//Устанавливаем само сообщение
                 email.putExtra(Intent.EXTRA_TEXT, message);
-//тип отправляемого сообщения
                 email.setType("message/rfc822");
-//Вызываем intent выбора клиента для отправки сообщения
                 startActivity(Intent.createChooser(email, "Выберите email клиент :"));
             }
 
