@@ -1,5 +1,4 @@
 package biz.bixer.bixer;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
@@ -28,18 +27,14 @@ import java.net.URL;
 import java.util.Scanner;
 
 import biz.bixer.bixer.R;
-
-
 public class Bitcoin_checker extends Fragment {
-
     public static final String BTC_URL = "https://api.coindesk.com/v1/bpi/currentprice/btc.json";
     private static final String TAG = "URLBUILDER";
     TextView usdValue;
     Button refreshButton;
     EditText btcValue;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                         Bundle savedInstanceState)
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_bitcoin_checker,container,false);
