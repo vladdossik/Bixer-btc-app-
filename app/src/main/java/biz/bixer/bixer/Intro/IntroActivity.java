@@ -58,7 +58,7 @@ public class IntroActivity extends AppCompatActivity {
 
         // hide the action bar
 
-      
+
 
         // ini views
         btnNext = findViewById(R.id.btn_next);
