@@ -63,11 +63,9 @@ public class IntroActivity extends AppCompatActivity {
         // setup tablayout with viewpager
         tabIndicator.setupWithViewPager(screenPager);
         // next button click Listner
-
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 position = screenPager.getCurrentItem();
                 if (position < mList.size()) {
 
