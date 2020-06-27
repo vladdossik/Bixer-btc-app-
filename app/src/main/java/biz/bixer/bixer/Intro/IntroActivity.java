@@ -60,11 +60,8 @@ public class IntroActivity extends AppCompatActivity {
         screenPager =findViewById(R.id.screen_viewpager);
         introViewPagerAdapter = new IntroViewPagerAdapter(this,mList);
         screenPager.setAdapter(introViewPagerAdapter);
-
         // setup tablayout with viewpager
-
         tabIndicator.setupWithViewPager(screenPager);
-
         // next button click Listner
 
         btnNext.setOnClickListener(new View.OnClickListener() {
