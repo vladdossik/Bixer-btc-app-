@@ -97,7 +97,6 @@ public class IntroActivity extends AppCompatActivity {
 
                 }
 
-
             }
 
             @Override
