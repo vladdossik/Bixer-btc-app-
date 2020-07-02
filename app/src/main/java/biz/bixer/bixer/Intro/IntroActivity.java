@@ -95,7 +95,6 @@ public class IntroActivity extends AppCompatActivity {
                 }
 
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
 
