@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:backgroundTint="@color/colorBackground"
     android:layout_height="match_parent"
     tools:context=".Intro.IntroActivity"
     android:background="#ffffff"
@@ -11,6 +12,7 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/screen_viewpager"
         android:layout_width="0dp"
+        android:backgroundTint="@color/colorBackground"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/tab_indicator"
@@ -77,6 +79,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:textColorHint="@color/colorAccent"
         android:text="Skip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

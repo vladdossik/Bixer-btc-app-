@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@color/colorBackground">
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -23,7 +23,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
-
+android:textColor="@color/colorTextTitle"
         android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
@@ -35,6 +35,7 @@
         android:lineSpacingExtra="16dp"
         android:id="@+id/intro_description"
         android:layout_width="0dp"
+        android:textColor="@color/colorTextTitle"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
