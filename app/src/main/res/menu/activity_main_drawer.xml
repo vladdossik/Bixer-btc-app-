@@ -8,7 +8,6 @@
 
         <item
             android:id="@+id/nav_checker"
-            android:icon="@drawable/ic_action_analytics"
             android:title="Bitcoin checker"
             android:textColor="#CCCCCC"
             />
