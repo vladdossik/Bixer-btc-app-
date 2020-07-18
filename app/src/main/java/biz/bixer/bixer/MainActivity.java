@@ -1,5 +1,6 @@
 package biz.bixer.bixer;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -74,7 +75,11 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
-      
+      if(id==R.id.news_reader){
+
+          Intent intent=new Intent(this,News.class);
+         startActivity(intent);
+      }
          if(id == R.id.nav_checker) {
             fragmentClass=Bitcoin_checker.class;
         }
