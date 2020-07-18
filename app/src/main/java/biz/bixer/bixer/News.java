@@ -9,7 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,7 +20,7 @@ import biz.bixer.bixer.R;
 public class News extends AppCompatActivity {
 
     String API_KEY = "8190df9eb51445228e397e4185311a66"; // ### YOUE NEWS API HERE ###
-    String NEWS_SOURCE = "techcrunch"; // Other news source code at: https://newsapi.org/sources
+    String NEWS_SOURCE = "bitcoin"; // Other news source code at: https://newsapi.org/sources
     ListView listNews;
     ProgressBar loader;
 
@@ -36,7 +35,7 @@ public class News extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_news);
 
         listNews = findViewById(R.id.listNews);
         loader = findViewById(R.id.loader);
@@ -86,13 +85,13 @@ public class News extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Unexpected error", Toast.LENGTH_SHORT).show();
                 }
 
-                ListNewsAdapter adapter = new ListNewsAdapter(MainActivity.this, dataList);
+                ListNewsAdapter adapter = new ListNewsAdapter(News.this, dataList);
                 listNews.setAdapter(adapter);
 
                 listNews.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-                        Intent i = new Intent(MainActivity.this, DetailsActivity.class);
+                        Intent i = new Intent(News.this, DetailsActivity.class);
                         i.putExtra("url", dataList.get(+position).get(KEY_URL));
                         startActivity(i);
                     }

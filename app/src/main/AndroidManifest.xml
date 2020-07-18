@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".News"></activity>
+        <activity android:name=".DetailsActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Intro.IntroActivity">
             <intent-filter>

@@ -79,20 +79,11 @@ public class MainActivity extends AppCompatActivity
 
           Intent intent=new Intent(this,News.class);
          startActivity(intent);
-      }
+      } else
          if(id == R.id.nav_checker) {
-            fragmentClass=Bitcoin_checker.class;
+             Intent intent=new Intent(this,Bitcoin_checker.class);
+             startActivity(intent);
         }
-        try {
-            fragment = (Fragment) fragmentClass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
-        item.setChecked(true);
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }
