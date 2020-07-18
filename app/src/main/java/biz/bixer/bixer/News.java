@@ -20,7 +20,7 @@ import biz.bixer.bixer.R;
 public class News extends AppCompatActivity {
 
     String API_KEY = "8190df9eb51445228e397e4185311a66"; // ### YOUE NEWS API HERE ###
-    String NEWS_SOURCE = "bitcoin"; // Other news source code at: https://newsapi.org/sources
+    String NEWS_SOURCE = "techcrunch"; // Other news source code at: https://newsapi.org/sources
     ListView listNews;
     ProgressBar loader;
 
