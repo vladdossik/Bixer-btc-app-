@@ -8,10 +8,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by SHAJIB on 9/9/2019.
- */
-
 public class Function {
 
     public static boolean isNetworkAvailable(Context context) {
