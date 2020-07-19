@@ -7,18 +7,18 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/news_reader"
-            android:title="News"
+            android:title="News ☑"
             android:textColor="#CCCCCC"
             />
 
         <item
             android:id="@+id/nav_checker"
-            android:title="Bitcoin checker"
+            android:title="Bitcoin checker ×"
             android:textColor="#CCCCCC"
             />
         <item
                 android:id="@+id/nav_help"
-                android:title="Help"
+                android:title="Help ×"
                 android:textColor="#CCCCCC"/>
     </group>
 
