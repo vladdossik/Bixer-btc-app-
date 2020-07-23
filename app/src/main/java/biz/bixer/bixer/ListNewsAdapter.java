@@ -50,7 +50,6 @@ class ListNewsAdapter extends BaseAdapter {
         holder.title.setId(position);
         holder.sdetails.setId(position);
         holder.time.setId(position);
-
         HashMap<String, String> song = new HashMap<String, String>();
         song = data.get(position);
 
