@@ -73,7 +73,6 @@ class ListNewsAdapter extends BaseAdapter {
         return convertView;
     }
 }
-
 class ListNewsViewHolder {
     ImageView galleryImage;
     TextView author, title, sdetails, time;
