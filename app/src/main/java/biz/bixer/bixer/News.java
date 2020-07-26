@@ -50,11 +50,10 @@ public class News extends AppCompatActivity {
         }
 
     }
-    
+
     class DownloadNews extends AsyncTask<String, Void, String> {
         @Override
         protected void onPreExecute() { super.onPreExecute(); }
-
         protected String doInBackground(String... args) {
             String xml = Function.excuteGet("https://newsapi.org/v1/articles?source=" + NEWS_SOURCE + "&sortBy=top&apiKey=" + API_KEY);
             return xml;
