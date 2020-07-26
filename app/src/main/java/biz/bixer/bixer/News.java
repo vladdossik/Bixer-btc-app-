@@ -60,7 +60,6 @@ public class News extends AppCompatActivity {
             String xml = Function.excuteGet("https://newsapi.org/v1/articles?source=" + NEWS_SOURCE + "&sortBy=top&apiKey=" + API_KEY);
             return xml;
         }
-
         @Override
         protected void onPostExecute(String xml) {
 
