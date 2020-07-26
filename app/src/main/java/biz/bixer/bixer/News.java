@@ -62,7 +62,6 @@ public class News extends AppCompatActivity {
         }
         @Override
         protected void onPostExecute(String xml) {
-
             if (xml.length() > 10) { // Just checking if not empty
 
                 try {
