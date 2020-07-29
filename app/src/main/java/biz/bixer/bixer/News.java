@@ -50,7 +50,6 @@ public class News extends AppCompatActivity {
         }
 
     }
-
     class DownloadNews extends AsyncTask<String, Void, String> {
         @Override
         protected void onPreExecute() { super.onPreExecute(); }
