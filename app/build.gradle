@@ -40,7 +40,6 @@ ext {
     supportLibrary = "27.0.2"
 }
 dependencies {
-
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:27.1.1'
