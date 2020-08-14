@@ -116,7 +116,6 @@ public class Bitcoin_checker extends Fragment {
             URL weatherRequestUrl = urlBuilder(location);
             try {
                 String jsonBtcResponse = getResponseFromHttpUrl(weatherRequestUrl);
-
                 return jsonParser(jsonBtcResponse);
             } catch (Exception e) {
                 e.printStackTrace();
