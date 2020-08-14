@@ -139,7 +139,6 @@ public class Bitcoin_checker extends Fragment {
                 e.printStackTrace();
                 Log.i(TAG, "onPostExecute: Exception " + valueData + " btcValue = " + btcValue.getText());
             }
-
         }
     }
 }
