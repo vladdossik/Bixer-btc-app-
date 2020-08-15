@@ -62,7 +62,6 @@ public class Bitcoin_checker extends Fragment {
             }
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
-
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 new FetchBtcTask().execute(BTC_URL);
             }
