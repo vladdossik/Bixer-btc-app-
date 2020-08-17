@@ -16,7 +16,6 @@ import java.util.HashMap;
 class ListNewsAdapter extends BaseAdapter {
     private Activity activity;
     private ArrayList<HashMap<String, String>> data;
-
     public ListNewsAdapter(Activity a, ArrayList<HashMap<String, String>> d) {
         activity = a;
         data=d;
