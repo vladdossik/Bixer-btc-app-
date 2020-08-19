@@ -48,7 +48,6 @@ class ListNewsAdapter extends BaseAdapter {
         holder.time.setId(position);
         HashMap<String, String> song = new HashMap<String, String>();
         song = data.get(position);
-
         try{
             holder.author.setText(song.get(News.KEY_AUTHOR));
             holder.title.setText(song.get(News.KEY_TITLE));
