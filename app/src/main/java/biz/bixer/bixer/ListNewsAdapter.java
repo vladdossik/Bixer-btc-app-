@@ -51,7 +51,6 @@ class ListNewsAdapter extends BaseAdapter {
             holder.title.setText(song.get(News.KEY_TITLE));
             holder.time.setText(song.get(News.KEY_PUBLISHEDAT));
             holder.sdetails.setText(song.get(News.KEY_DESCRIPTION));
-
             if(song.get(News.KEY_URLTOIMAGE).toString().length() < 5)
             {
                 holder.galleryImage.setVisibility(View.GONE);
