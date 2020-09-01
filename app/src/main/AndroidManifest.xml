@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_splash"
@@ -12,11 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_splash"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".News"></activity>
-        <activity android:name=".DetailsActivity"></activity>
+        <activity android:name=".Bitcoin_checker"
+            tools:ignore="Instantiatable"></activity>
+        <activity android:name=".News" />
+        <activity android:name=".DetailsActivity" />
         <activity android:name=".MainActivity" />
-
-        <activity android:name=".Intro.IntroActivity"
+        <activity
+            android:name=".Intro.IntroActivity"
             tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
