@@ -13,11 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_splash"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bitcoin_checker"
-            tools:ignore="Instantiatable"></activity>
+
         <activity android:name=".News" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".Bitcoin_checker"/>
         <activity
             android:name=".Intro.IntroActivity"
             tools:ignore="MissingClass">
