@@ -3,6 +3,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,14 +28,13 @@ import java.net.URL;
 import java.util.Scanner;
 
 import biz.bixer.bixer.R;
-public class Bitcoin_checker extends Fragment {
+public class Bitcoin_checker extends AppCompatActivity {
     public static final String BTC_URL = "https://api.coindesk.com/v1/bpi/currentprice/btc.json";
     private static final String TAG = "URLBUILDER";
     TextView usdValue;
     Button refreshButton;
     EditText btcValue;
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    protected void onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_bitcoin_checker,container,false);
@@ -66,7 +66,7 @@ public class Bitcoin_checker extends Fragment {
                 new FetchBtcTask().execute(BTC_URL);
             }
         });
-        return view;
+
     }
     public static String getResponseFromHttpUrl(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();

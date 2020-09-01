@@ -17,7 +17,8 @@
         <activity android:name=".News" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Bitcoin_checker"/>
+        <activity android:name=".Bitcoin_checker"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Intro.IntroActivity"
             tools:ignore="MissingClass">
