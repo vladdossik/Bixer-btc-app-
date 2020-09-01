@@ -15,6 +15,7 @@
         <activity android:name=".News"></activity>
         <activity android:name=".DetailsActivity"></activity>
         <activity android:name=".MainActivity" />
+
         <activity android:name=".Intro.IntroActivity"
             tools:ignore="MissingClass">
             <intent-filter>

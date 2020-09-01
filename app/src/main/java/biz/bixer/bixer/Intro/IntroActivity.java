@@ -44,7 +44,6 @@ public class IntroActivity extends AppCompatActivity {
             finish();
         }
         setContentView(R.layout.activity_intro);
-
         btnNext = findViewById(R.id.btn_next);
         btnGetStarted = findViewById(R.id.btn_get_started);
         tabIndicator = findViewById(R.id.tab_indicator);
