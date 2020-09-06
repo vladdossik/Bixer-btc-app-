@@ -66,7 +66,6 @@ public class Bitcoin_checker extends AppCompatActivity {
                 new FetchBtcTask().execute(BTC_URL);
             }
         });
-
     }
     public static String getResponseFromHttpUrl(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
